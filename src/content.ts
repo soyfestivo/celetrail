@@ -117,9 +117,9 @@ export const content = {
       },
     ],
     photos: [
-      { src: "/images/problem-1.jpg", caption: "Where the sidewalk ends." },
-      { src: "/images/problem-2.jpg", caption: "The route kids walk to school today." },
-      { src: "/images/problem-3.jpg", caption: "The 888-foot creek gap." },
+      { src: "/images/sidewalk-ends-before-school.jpeg", caption: "Where the sidewalk ends, which could connect path segment 3" },
+      { src: "/images/vine-creek-missing-bridge.jpeg", caption: "Connection to the schools, Blackhawk, and future retail is almost walkable from Vine Creek but this gap (path segment 2) is missing and impassible." },
+      { src: "/images/Altesino-missing-path.jpeg", caption: "While Altesino Cv is part of Vine Creek and a path was originally planned by the developer to connect it to the rest of the neighborhood the trail was never added." },
     ],
   },
 

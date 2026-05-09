@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ArrowRight, MapPin, ChevronRight, ChevronDown } from "lucide-react";
+import { ArrowRight, MapPin, ChevronDown } from "lucide-react";
 import { content } from "../content";
 import Countdown from "./Countdown";
 import { getNextEvent } from "../lib/timeline";
@@ -30,8 +30,8 @@ export default function Hero() {
       <div className="hidden sm:block absolute inset-0 -z-10 bg-gradient-to-t from-white/40 via-transparent to-transparent" />
 
       <div className="container-page py-14 sm:py-28 lg:py-32">
-        <div className="max-w-3xl">
-          <div className="mb-4 sm:mb-5 inline-flex items-center gap-2 rounded-full border border-forest-200 bg-white/80 px-3 py-1 text-[11px] sm:text-xs font-medium uppercase tracking-wider text-forest-700">
+        <div className="max-w-3xl flex flex-col items-stretch sm:items-start text-center sm:text-left">
+          <div className="mb-4 sm:mb-5 self-center sm:self-start inline-flex items-center gap-2 rounded-full border border-forest-200 bg-white/80 px-3 py-1 text-[11px] sm:text-xs font-medium uppercase tracking-wider text-forest-700">
             <MapPin className="h-3.5 w-3.5" />
             {hero.eyebrow}
           </div>
@@ -40,22 +40,21 @@ export default function Hero() {
             {hero.headline}
           </h1>
 
-          <p className="mt-5 sm:mt-6 max-w-2xl text-lg sm:text-2xl text-stone-700 leading-relaxed">
+          <p className="mt-5 sm:mt-6 max-w-2xl mx-auto sm:mx-0 text-lg sm:text-2xl text-stone-700 leading-relaxed">
             <span className="sm:hidden">{hero.subheadShort}</span>
             <span className="hidden sm:inline">{hero.subhead}</span>
           </p>
 
           {next ? (
-            <div className="mt-7 sm:mt-8 flex flex-col gap-5">
+            <div className="mt-7 sm:mt-8 flex flex-col items-stretch gap-5">
               <a
                 href="#timeline"
-                className="group inline-flex items-start gap-2 self-start"
+                className="group inline-block self-center sm:self-start"
                 aria-label="Jump to timeline"
               >
                 <Countdown deadline={next.date} prefix={`Next: ${next.title}`} />
-                <ChevronRight className="h-4 w-4 mt-3 text-stone-400 transition-transform group-hover:translate-x-0.5" />
               </a>
-              <div className="flex flex-wrap items-center gap-x-2 sm:gap-x-3 gap-y-2">
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-x-2 sm:gap-x-3 gap-y-2">
                 <a
                   href={hero.primaryCta.url}
                   target="_blank"
