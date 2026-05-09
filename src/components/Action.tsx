@@ -37,9 +37,24 @@ export default function Action() {
                   : "bg-white/10 hover:bg-white/15 backdrop-blur"
               }`}
             >
-              <p className="text-xs font-semibold uppercase tracking-wider opacity-90">
-                {t.kicker}
-              </p>
+              <div className="flex items-start justify-between gap-3">
+                <p className="text-xs font-semibold uppercase tracking-wider opacity-90">
+                  {t.kicker}
+                </p>
+                {t.cityBadge && (
+                  <span
+                    className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-md bg-white p-1 shadow-sm"
+                    aria-label="City of Pflugerville"
+                    title="City of Pflugerville"
+                  >
+                    <img
+                      src="/images/Pflugerville-logo.svg"
+                      alt=""
+                      className="h-full w-full"
+                    />
+                  </span>
+                )}
+              </div>
               <h3 className="mt-2 text-2xl font-bold leading-tight">{t.title}</h3>
               <p className="mt-3 text-white/90 leading-relaxed">{t.body}</p>
               <span className="mt-5 inline-flex items-center gap-1 font-semibold">

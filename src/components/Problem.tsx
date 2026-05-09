@@ -61,15 +61,6 @@ export default function Problem() {
           })}
         </div>
 
-        {/* Pull quote */}
-        {problem.quote.text && (
-          <blockquote className="mt-14 border-l-4 border-forest-500 pl-6 max-w-3xl">
-            <p className="font-display text-2xl text-stone-800 italic leading-relaxed">
-              "{problem.quote.text}"
-            </p>
-            <footer className="mt-3 text-sm text-stone-500">{problem.quote.author}</footer>
-          </blockquote>
-        )}
       </div>
     </section>
   );

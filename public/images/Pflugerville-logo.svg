@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="89.611" height="90.1" viewBox="0 0 89.611 90.1">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Rectangle_763" data-name="Rectangle 763" d="M12.173,0H76.922A12.172,12.172,0,0,1,89.094,12.172V76.918A12.173,12.173,0,0,1,76.921,89.091H12.173A12.173,12.173,0,0,1,0,76.918V12.173A12.173,12.173,0,0,1,12.173,0Z" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_760" data-name="Rectangle 760" width="86.462" height="124.203" fill="#0e5c9a"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="Rectangle_762" data-name="Rectangle 762" width="80.436" height="143.64" fill="#0f7b54"/>
+    </clipPath>
+  </defs>
+  <g id="Group_10008" data-name="Group 10008" transform="translate(-76.776 -3036.577)">
+    <g id="Group_10007" data-name="Group 10007" transform="translate(77.294 3037.077)" clip-path="url(#clip-path)">
+      <g id="Group_10002" data-name="Group 10002" transform="translate(-12.024 -15.712)">
+        <g id="Group_10001" data-name="Group 10001" transform="translate(0 0)" clip-path="url(#clip-path-2)">
+          <g id="Group_10000" data-name="Group 10000">
+            <g id="Group_9999" data-name="Group 9999" clip-path="url(#clip-path-2)">
+              <path id="Path_236" data-name="Path 236" d="M86.712,134.653,6.4,127.278.25,19.055l56.572-8.6s-10.689,77.473,29.889,124.2" transform="translate(-0.25 -10.45)" fill="#0e5c9a"/>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="Group_10006" data-name="Group 10006" transform="translate(35.387 -23.094)">
+        <g id="Group_10005" data-name="Group 10005" transform="translate(0 0)" clip-path="url(#clip-path-4)">
+          <g id="Group_10004" data-name="Group 10004">
+            <g id="Group_10003" data-name="Group 10003" clip-path="url(#clip-path-4)">
+              <path id="Path_237" data-name="Path 237" d="M145.021,112.164s12.354,61.262-43.046,13.526C38.9,71.34,77.383.25,77.383.25l66.4,8.612Z" transform="translate(-65.76 -0.25)" fill="#0f7b54"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path id="Union_1" data-name="Union 1" d="M50.471,89.1A81.5,81.5,0,0,1,39.024,69.184c-20.174,9.388-26.6,3.627-26.352-2.962,4.451,1.9,14.131.162,24.023-3.577-4.507-14.42-4.992-28.71-4.147-40.1a92.828,92.828,0,0,0-8.515,5.41c-10.4,7.434-16.677,17.72-17.468,25.826A11,11,0,0,1,0,48.385V37c2.333-5.468,8.015-12.28,19.5-20.458A70.3,70.3,0,0,1,34.368,8.526c.75-4.013,1.512-6.97,1.946-8.526H47.232q-.7,2.558-1.3,5.02C60.2,1.973,73.923,3.728,80.766,11.3,92,23.723,83.409,40.8,62.96,54.968c-5.451,3.777-10.366,6.89-14.784,9.428,7.27,14.585,19.5,21.473,28.816,24.7ZM45.739,58.673a74.041,74.041,0,0,0,9.2-5.451C70.673,42.148,79.846,29.89,72.18,20.254c-6.1-7.672-17.351-7.087-28.753-2.819C40.656,34.987,42.055,48.407,45.739,58.673Z" transform="translate(77.276 3037.077)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>

@@ -12,7 +12,7 @@ export const content = {
     tagline: "Connect Pflugerville",
     domain: "celetrail.com",
     description:
-      "Three connected pedestrian projects — anchored by a 192-foot creek bridge — that knit the Cele Road neighborhoods into the Pflugerville trail network.",
+      "Let's finish the CeleTrail. Three connected projects bringing the Cele Road neighborhoods into Pflugerville's Trail Capital of Texas — anchored by a 192-foot creek bridge.",
   },
 
   // ---------------------------------------------------------------------------
@@ -20,14 +20,14 @@ export const content = {
   // ---------------------------------------------------------------------------
   hero: {
     eyebrow: "A 2026 Bond Proposal · Pflugerville, TX",
-    headline: "Connect the Cele Island.",
+    headline: "Let's Finish the CeleTrail.",
     subhead:
-      "A 192-foot creek bridge and ~4,000 feet of safe sidewalks across three projects — knitting our neighborhoods into the Trail Capital of Texas.",
+      "Three connected projects to bring the Cele Road neighborhoods — Vine Creek, Enclave at Cele, and adjacent Blackhawk — into the Trail Capital of Texas.",
     image: "/images/pf-splash1.jpeg", // drop a wide hero photo here
     stats: [
-      { value: "192 ft", label: "Critical creek bridge" },
-      { value: "~4,000 ft", label: "Of new safe corridor" },
-      { value: "2 schools", label: "Cele Middle · Mott Elementary" },
+      { value: "90%", label: "Trail-access goal" },
+      { value: "3", label: "Strategic projects" },
+      { value: "~1,000", label: "Homes directly served (est.)" },
     ],
     primaryCta: {
       label: "Take the Bond Survey",
@@ -95,7 +95,7 @@ export const content = {
   // ---------------------------------------------------------------------------
   problem: {
     title: "The Cele Island Effect",
-    lede: "Our neighborhood is physically cut off from the rest of Pflugerville. While the city builds new trails on every side of us, the Cele Road corridor remains a connectivity desert.",
+    lede: "Our neighborhoods are physically cut off from the rest of Pflugerville. While the city builds new trails on the west side us, the Cele Road corridor remains a connectivity desert — a missing piece in the Trail Capital of Texas.",
     bullets: [
       {
         icon: "AlertTriangle",
@@ -105,12 +105,12 @@ export const content = {
       {
         icon: "Users",
         title: "Safety Hazard",
-        body: "Residents — including children walking to school — are forced onto high-traffic road shoulders or through unmanaged, muddy terrain to reach nearby parks.",
+        body: "1,400+ students at Mott Elementary and Cele Middle have no off-street route to school — they walk shoulders, cross unmarked drives, or get driven a quarter-mile.",
       },
       {
         icon: "MapPinOff",
-        title: "Infrastructure Inequity",
-        body: "While surrounding neighborhoods enjoy modern sidewalk connectivity, Cele Road is missing from the network the city has built everywhere else.",
+        title: "The 10% Left Behind",
+        body: "Pflugerville's Master Mobility Plan aims to put 90% of residents within half a mile of a trail. The Cele Road corridor is squarely in the 10% it has not yet reached.",
       },
     ],
     photos: [
@@ -118,18 +118,14 @@ export const content = {
       { src: "/images/problem-2.jpg", caption: "The route kids walk to school today." },
       { src: "/images/problem-3.jpg", caption: "The 888-foot creek gap." },
     ],
-    quote: {
-      text: "I don't let my kids walk to the park alone — there's no sidewalk for the last quarter mile, and the shoulder isn't safe.",
-      author: "— A Cele Road resident",
-    },
   },
 
   // ---------------------------------------------------------------------------
   // SECTION 3 — THE SOLUTION (with embedded map)
   // ---------------------------------------------------------------------------
   solution: {
-    title: "Three Projects. One Corridor.",
-    lede: "We propose the Cele Trail be included in the 2026 Bond Program as three connected projects — each high-impact on its own, transformative together.",
+    title: "Three Projects to Finish the Trail.",
+    lede: "We propose the CeleTrail be included in the 2026 Bond Program as three connected projects — each a meaningful win on its own, transformative together. Most of the corridor follows public and PfISD-owned land, keeping cost and complexity low.",
 
     // INSTRUCTIONS:
     // 1. Go to https://mymaps.google.com → Create New Map
@@ -163,18 +159,18 @@ export const content = {
         scope:
           "A pedestrian bridge across the Vine Creek tributary connecting the Vine Creek neighborhood to Blackhawk.",
         impact:
-          "The keystone crossing — 192 feet that today separate hundreds of homes from any walkable connection west.",
+          "The keystone crossing — 192 feet that today separate hundreds of homes from any walkable connection west. Build it, and the Cele Island ends.",
         image: "/images/phase2-bridge.jpg",
       },
       {
         label: "Project 3",
-        title: "Finish Blackhawk Trail",
+        title: "Finish the School Link",
         distance: "0.549 miles",
         status: "Safe Routes to School",
         scope:
-          "Trail expansion across public and school-owned land connecting Blackhawk to Rowe Valley, passing Cele Middle School and Mott Elementary.",
+          "Trail expansion across public and PfISD-owned land connecting Blackhawk to Rowe Lane Estates, passing Cele Middle School and Mott Elementary.",
         impact:
-          "Creates a true Safe Route to School for hundreds of students and links the corridor to the broader Pflugerville trail network.",
+          "Creates a true Safe Route to School for 1,400+ students at Mott Elementary and Cele Middle, and links the corridor to the broader Pflugerville trail network.",
         image: "/images/phase3-blackhawk.jpg",
       },
     ],
@@ -183,19 +179,19 @@ export const content = {
     whyBullets: [
       {
         title: "Safe Routes to School",
-        body: "Directly impacts student safety with off-street paths to elementary, middle, and high schools.",
+        body: "Direct, off-street paths for 1,400+ students at Mott Elementary and Cele Middle.",
       },
       {
         title: "Trail Capital Alignment",
-        body: "Supports Pflugerville's stated goal of 3.7 miles of trails per 2,000 residents.",
+        body: "Helps the City hit its Master Plan goal of 150 miles of trails and 90% of residents within half a mile of one.",
       },
       {
-        title: "Traffic Mitigation",
-        body: "Every resident walking or biking is one less car on Cele Road and FM 685.",
+        title: "The Trail Capital Promise",
+        body: "Families along the Cele Road corridor — Vine Creek, Enclave at Cele, Altesino Cove, and the Blackhawk homes nearest the schools — moved to Pflugerville expecting the \"Trail Capital of Texas.\" For them, that promise still ends at a dead-end street. Trail-connected homes also see a 4–7% value uplift (American Trails / NRPA), strengthening the same tax base that funds the bond.",
       },
       {
         title: "Shovel-Ready",
-        body: "Most of Phase 2 follows existing public and school-owned land — reducing acquisition cost and complexity.",
+        body: "Most of the corridor follows public and PfISD-owned land — no private acquisitions, no coordination delays.",
       },
     ],
   },
@@ -215,6 +211,7 @@ export const content = {
         cta: "Open the survey",
         url: "https://pflugervilletx.gov/1048/Bond-Election-2026",
         urgent: true,
+        cityBadge: true,
       },
       {
         kicker: "Step 2 · 5 minutes",
@@ -223,6 +220,7 @@ export const content = {
         cta: "Report it",
         url: "https://www.pflugervilletx.gov/686/Report-a-Problem",
         urgent: false,
+        cityBadge: false,
       },
       {
         kicker: "Step 3 · Tuesday May 12 · 7pm",
@@ -231,6 +229,7 @@ export const content = {
         cta: "Add to calendar",
         url: "https://pflugerville.legistar.com",
         urgent: false,
+        cityBadge: true,
       },
     ],
 
@@ -238,7 +237,7 @@ export const content = {
     blastIntro:
       "Copy this and paste it into Nextdoor, your HOA group, or a group text. The city is ranking projects right now — every voice counts.",
     blastText:
-      "Hey neighbors — I'm asking the City of Pflugerville to fund the Cele Trail in the 2026 Bond: an 888 ft pedestrian bridge plus 2.5 miles of safe sidewalks connecting our streets to the schools and parks. Please take 2 minutes to fill out the bond survey and mention \"Cele Trail\" and \"Pedestrian Connectivity Gaps\". Details + survey link: https://celetrail.com",
+      "Hey neighbors — help finish the Cele Trail. I'm asking the City of Pflugerville to fund three connected pedestrian projects in the 2026 Bond: a 192 ft creek bridge plus safe sidewalks connecting Vine Creek, Blackhawk, Enclave at Cele, and Rowe Lane Estates to our schools and parks. Please take 2 minutes on the bond survey and mention \"Cele Trail\" and \"Pedestrian Connectivity Gaps\". https://celetrail.com",
 
     petitionTitle: "Sign the neighborhood petition",
     petitionLede:
@@ -247,7 +246,7 @@ export const content = {
     // 1. Create a Google Form: Name, Street Address, Email, optional comment
     // 2. Click Send → Embed (the < > icon)
     // 3. Copy the iframe `src` URL and paste it here
-    googleFormUrl: "", // e.g. "https://docs.google.com/forms/d/e/.../viewform?embedded=true"
+    googleFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfPfQIcDsG8JiIANelqoui4qsbkBEmb7ghxJ7t2Pk7vtBwu9Q/viewform?usp=publish-editor", // e.g. "https://docs.google.com/forms/d/e/.../viewform?embedded=true"
   },
 
   // ---------------------------------------------------------------------------
@@ -255,7 +254,7 @@ export const content = {
   // ---------------------------------------------------------------------------
   footer: {
     alignment:
-      "This proposal directly supports the City of Pflugerville's $217M Master Mobility Plan (2025), the Pflugerville Forward initiative, and the city's stated goal of 3.7 miles of trails per 2,000 residents.",
+      "This proposal directly supports the City of Pflugerville's $217M Master Mobility Plan (2025) and the Trail Capital of Texas resolution — helping reach the stated goals of 150 miles of trails and 90% of residents within half a mile of one.",
     sources: [
       { label: "Pflugerville 2026 Bond", url: "https://pflugervilletx.gov/1048/Bond-Election-2026" },
       {

@@ -63,9 +63,9 @@ export default function Countdown({
 
   // size === "sm"
   return (
-    <div className="inline-flex items-center gap-3 rounded-full bg-ember-500/10 px-4 py-2 text-sm">
-      {prefix && <span className="font-semibold text-ember-600">{prefix}</span>}
-      <span className="flex items-baseline gap-2 font-mono tabular-nums text-stone-900">
+    <div className="inline-flex flex-col sm:flex-row items-start sm:items-center gap-1 sm:gap-3 rounded-2xl sm:rounded-full bg-ember-500/10 px-4 py-2 text-sm">
+      {prefix && <span className="font-semibold text-ember-600 leading-tight">{prefix}</span>}
+      <span className="flex flex-wrap items-baseline gap-x-2 gap-y-0 font-mono tabular-nums text-stone-900">
         {cells.map((c, i) => (
           <span key={c.label} className="flex items-baseline gap-1">
             <span className="font-bold">{String(c.value).padStart(2, "0")}</span>

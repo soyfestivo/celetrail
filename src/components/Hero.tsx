@@ -24,52 +24,55 @@ export default function Hero() {
         className="absolute inset-0 -z-10 bg-cover bg-center"
         style={{ backgroundImage: `url(${hero.image})` }}
       />
-      {/* Legibility wash — heavy on the left where text sits, fades out on the right */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-white/95 via-white/65 to-transparent" />
-      {/* Soft bottom fade so stat cards have a backdrop */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-white/40 via-transparent to-transparent" />
+      {/* Mobile: solid wash so text reads cleanly. Desktop: left-fade so the field shows on the right. */}
+      <div className="absolute inset-0 -z-10 bg-white/85 sm:bg-transparent" />
+      <div className="hidden sm:block absolute inset-0 -z-10 bg-gradient-to-r from-white/95 via-white/65 to-transparent" />
+      <div className="hidden sm:block absolute inset-0 -z-10 bg-gradient-to-t from-white/40 via-transparent to-transparent" />
 
-      <div className="container-page py-20 sm:py-28 lg:py-32">
+      <div className="container-page py-14 sm:py-28 lg:py-32">
         <div className="max-w-3xl">
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-forest-200 bg-white/70 px-3 py-1 text-xs font-medium uppercase tracking-wider text-forest-700">
+          <div className="mb-4 sm:mb-5 inline-flex items-center gap-2 rounded-full border border-forest-200 bg-white/70 px-3 py-1 text-[11px] sm:text-xs font-medium uppercase tracking-wider text-forest-700">
             <MapPin className="h-3.5 w-3.5" />
             {hero.eyebrow}
           </div>
 
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] text-stone-900">
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] text-stone-900">
             {hero.headline}
           </h1>
 
-          <p className="mt-6 max-w-2xl text-xl sm:text-2xl text-stone-700 leading-relaxed">
+          <p className="mt-5 sm:mt-6 max-w-2xl text-lg sm:text-2xl text-stone-700 leading-relaxed">
             {hero.subhead}
           </p>
 
           {next ? (
-            <div className="mt-8 flex flex-col gap-5">
+            <div className="mt-7 sm:mt-8 flex flex-col gap-5">
               <a
                 href="#timeline"
-                className="group inline-flex items-center gap-2 self-start"
+                className="group inline-flex items-start gap-2 self-start"
                 aria-label="Jump to timeline"
               >
                 <Countdown deadline={next.date} prefix={`Next: ${next.title}`} />
-                <ChevronRight className="h-4 w-4 text-stone-400 transition-transform group-hover:translate-x-0.5" />
+                <ChevronRight className="h-4 w-4 mt-3 text-stone-400 transition-transform group-hover:translate-x-0.5" />
               </a>
               <div className="flex flex-wrap gap-3">
                 <a
                   href={hero.primaryCta.url}
                   target="_blank"
                   rel="noreferrer"
-                  className="btn-urgent text-base"
+                  className="btn-urgent flex-1 sm:flex-none text-base"
                 >
                   {hero.primaryCta.label} <ArrowRight className="h-4 w-4" />
                 </a>
-                <a href={hero.secondaryCta.anchor} className="btn-secondary">
+                <a
+                  href={hero.secondaryCta.anchor}
+                  className="btn-secondary flex-1 sm:flex-none"
+                >
                   {hero.secondaryCta.label}
                 </a>
               </div>
             </div>
           ) : (
-            <div className="mt-8 rounded-lg border border-creek-500/30 bg-white/80 p-5">
+            <div className="mt-7 sm:mt-8 rounded-lg border border-creek-500/30 bg-white/80 p-5">
               <p className="text-sm font-semibold uppercase tracking-wider text-creek-600">
                 Bond cycle complete
               </p>
@@ -83,17 +86,17 @@ export default function Hero() {
             </div>
           )}
 
-          {/* Stat strip */}
-          <dl className="mt-12 grid grid-cols-3 gap-3 sm:gap-6 max-w-2xl">
+          {/* Stat strip — stacks on mobile, row on desktop */}
+          <dl className="mt-10 sm:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-6 max-w-2xl">
             {hero.stats.map((s) => (
               <div
                 key={s.label}
-                className="rounded-lg border border-stone-200 bg-white/80 p-4"
+                className="flex sm:block items-baseline justify-between gap-3 rounded-lg border border-stone-200 bg-white/90 px-4 py-3 sm:p-4"
               >
-                <dt className="text-xs uppercase tracking-wider text-stone-500">
+                <dt className="order-2 sm:order-1 text-[11px] sm:text-xs uppercase tracking-wider text-stone-500 leading-tight">
                   {s.label}
                 </dt>
-                <dd className="mt-1 font-display text-2xl sm:text-3xl font-bold text-forest-700">
+                <dd className="order-1 sm:order-2 sm:mt-1 font-display text-xl sm:text-3xl font-bold text-forest-700 whitespace-nowrap">
                   {s.value}
                 </dd>
               </div>
