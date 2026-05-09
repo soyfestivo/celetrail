@@ -23,6 +23,9 @@ export const content = {
     headline: "Let's Finish the Cele Trail.",
     subhead:
       "Three connected projects to bring the Cele Road neighborhoods — Vine Creek, Enclave at Cele, and adjacent Blackhawk — into the Trail Capital of Texas.",
+    // Shorter version shown on mobile (hero gets crowded otherwise)
+    subheadShort:
+      "Three connected projects to bring the Cele Road neighborhoods into the Trail Capital of Texas.",
     image: "/images/pf-splash1.jpeg", // drop a wide hero photo here
     stats: [
       { value: "90%", label: "Trail-access goal" },
@@ -169,7 +172,7 @@ export const content = {
       {
         label: "Project 3",
         title: "Finish the School Link",
-        distance: "0.549 miles",
+        distance: "0.5 miles",
         status: "Safe Routes to School",
         // Color matches the route on the map (rgb 255, 214, 0)
         color: "#ffd600",

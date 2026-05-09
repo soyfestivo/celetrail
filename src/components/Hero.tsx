@@ -24,14 +24,15 @@ export default function Hero() {
         className="absolute inset-0 -z-10 bg-cover bg-center"
         style={{ backgroundImage: `url(${hero.image})` }}
       />
-      {/* Mobile: solid wash so text reads cleanly. Desktop: left-fade so the field shows on the right. */}
-      <div className="absolute inset-0 -z-10 bg-white/85 sm:bg-transparent" />
+      {/* Mobile: lighter wash so the field photo shows through behind the headline. Desktop: left-fade. */}
+      <div className="absolute inset-0 -z-10 bg-white/65 sm:bg-transparent" />
       <div className="hidden sm:block absolute inset-0 -z-10 bg-gradient-to-r from-white/95 via-white/65 to-transparent" />
       <div className="hidden sm:block absolute inset-0 -z-10 bg-gradient-to-t from-white/40 via-transparent to-transparent" />
 
       <div className="container-page py-14 sm:py-28 lg:py-32">
         <div className="max-w-3xl">
-          <div className="mb-4 sm:mb-5 inline-flex items-center gap-2 rounded-full border border-forest-200 bg-white/70 px-3 py-1 text-[11px] sm:text-xs font-medium uppercase tracking-wider text-forest-700">
+          {/* Eyebrow tag — desktop only; mobile is too crowded */}
+          <div className="hidden sm:inline-flex mb-5 items-center gap-2 rounded-full border border-forest-200 bg-white/70 px-3 py-1 text-xs font-medium uppercase tracking-wider text-forest-700">
             <MapPin className="h-3.5 w-3.5" />
             {hero.eyebrow}
           </div>
@@ -41,7 +42,8 @@ export default function Hero() {
           </h1>
 
           <p className="mt-5 sm:mt-6 max-w-2xl text-lg sm:text-2xl text-stone-700 leading-relaxed">
-            {hero.subhead}
+            <span className="sm:hidden">{hero.subheadShort}</span>
+            <span className="hidden sm:inline">{hero.subhead}</span>
           </p>
 
           {next ? (
@@ -86,17 +88,17 @@ export default function Hero() {
             </div>
           )}
 
-          {/* Stat strip — stacks on mobile, row on desktop */}
-          <dl className="mt-10 sm:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-6 max-w-2xl">
+          {/* Stat strip — desktop only. Mobile sees these stats baked into the body sections below. */}
+          <dl className="hidden sm:grid mt-12 grid-cols-3 gap-6 max-w-2xl">
             {hero.stats.map((s) => (
               <div
                 key={s.label}
-                className="flex sm:block items-baseline justify-between gap-3 rounded-lg border border-stone-200 bg-white/90 px-4 py-3 sm:p-4"
+                className="rounded-lg border border-stone-200 bg-white/90 p-4"
               >
-                <dt className="order-2 sm:order-1 text-[11px] sm:text-xs uppercase tracking-wider text-stone-500 leading-tight">
+                <dt className="text-xs uppercase tracking-wider text-stone-500 leading-tight">
                   {s.label}
                 </dt>
-                <dd className="order-1 sm:order-2 sm:mt-1 font-display text-xl sm:text-3xl font-bold text-forest-700 whitespace-nowrap">
+                <dd className="mt-1 font-display text-3xl font-bold text-forest-700 whitespace-nowrap">
                   {s.value}
                 </dd>
               </div>
