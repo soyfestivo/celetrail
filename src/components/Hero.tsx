@@ -17,14 +17,17 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden border-b border-stone-200 bg-gradient-to-br from-forest-50 via-stone-50 to-creek-500/5"
+      className="relative isolate overflow-hidden border-b border-stone-200"
     >
-      {/* Background image overlay */}
+      {/* Background image */}
       <div
-        className="absolute inset-0 -z-10 opacity-20 bg-cover bg-center"
+        className="absolute inset-0 -z-10 bg-cover bg-center"
         style={{ backgroundImage: `url(${hero.image})` }}
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white/40 via-white/60 to-white/90" />
+      {/* Legibility wash — heavy on the left where text sits, fades out on the right */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-white/95 via-white/65 to-transparent" />
+      {/* Soft bottom fade so stat cards have a backdrop */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-white/40 via-transparent to-transparent" />
 
       <div className="container-page py-20 sm:py-28 lg:py-32">
         <div className="max-w-3xl">

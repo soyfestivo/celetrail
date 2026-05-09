@@ -23,7 +23,7 @@ export const content = {
     headline: "Connect the Cele Island.",
     subhead:
       "A 192-foot creek bridge and ~4,000 feet of safe sidewalks across three projects — knitting our neighborhoods into the Trail Capital of Texas.",
-    image: "/images/hero.jpg", // drop a wide hero photo here
+    image: "/images/pf-splash1.jpeg", // drop a wide hero photo here
     stats: [
       { value: "192 ft", label: "Critical creek bridge" },
       { value: "~4,000 ft", label: "Of new safe corridor" },
