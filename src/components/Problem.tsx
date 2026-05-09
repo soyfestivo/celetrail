@@ -33,9 +33,6 @@ export default function Problem() {
                     (e.target as HTMLImageElement).style.display = "none";
                   }}
                 />
-                <div className="absolute inset-0 flex items-center justify-center text-stone-400 text-sm pointer-events-none">
-                  Photo: {p.src}
-                </div>
               </div>
               <figcaption className="px-3 py-2 text-sm text-stone-600">
                 {p.caption}

@@ -66,6 +66,12 @@ export default function Solution() {
               key={p.label}
               className="flex flex-col overflow-hidden rounded-xl border border-stone-200 bg-white"
             >
+              {/* Colorbar — matches the route on the embedded map above */}
+              <div
+                className="h-1.5 w-full"
+                style={{ backgroundColor: p.color }}
+                aria-hidden="true"
+              />
               <div className="aspect-[16/10] bg-stone-200 relative">
                 <img
                   src={p.image}
@@ -75,13 +81,15 @@ export default function Solution() {
                     (e.target as HTMLImageElement).style.display = "none";
                   }}
                 />
-                <div className="absolute inset-0 flex items-center justify-center text-stone-400 text-sm pointer-events-none">
-                  Photo: {p.image}
-                </div>
               </div>
               <div className="flex flex-col flex-1 p-6">
                 <div className="flex items-center justify-between gap-2 flex-wrap">
-                  <span className="text-xs font-semibold uppercase tracking-wider text-creek-600">
+                  <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-creek-600">
+                    <span
+                      className="inline-block h-2.5 w-2.5 rounded-full"
+                      style={{ backgroundColor: p.color }}
+                      aria-hidden="true"
+                    />
                     {p.label} · {p.distance}
                   </span>
                   <span className="rounded-full bg-forest-100 px-2 py-1 text-xs font-medium text-forest-700">

@@ -20,7 +20,7 @@ export const content = {
   // ---------------------------------------------------------------------------
   hero: {
     eyebrow: "A 2026 Bond Proposal · Pflugerville, TX",
-    headline: "Let's Finish the CeleTrail.",
+    headline: "Let's Finish the Cele Trail.",
     subhead:
       "Three connected projects to bring the Cele Road neighborhoods — Vine Creek, Enclave at Cele, and adjacent Blackhawk — into the Trail Capital of Texas.",
     image: "/images/pf-splash1.jpeg", // drop a wide hero photo here
@@ -95,7 +95,7 @@ export const content = {
   // ---------------------------------------------------------------------------
   problem: {
     title: "The Cele Island Effect",
-    lede: "Our neighborhoods are physically cut off from the rest of Pflugerville. While the city builds new trails on the west side us, the Cele Road corridor remains a connectivity desert — a missing piece in the Trail Capital of Texas.",
+    lede: "Our neighborhoods are physically cut off from the rest of Pflugerville. While the city builds new trails on the west side, the Cele Road corridor remains a connectivity desert — a missing piece in the Trail Capital of Texas.",
     bullets: [
       {
         icon: "AlertTriangle",
@@ -145,33 +145,39 @@ export const content = {
         title: "Altesino Cv Connect",
         distance: "916 feet",
         status: "Neighborhood Win",
+        // Color matches the route on the map (rgb 255, 82, 82)
+        color: "#ff5252",
         scope:
           "Sidewalk connecting Altesino Cove to the rest of the Vine Creek neighborhood and Vine Creek Park.",
         impact:
           "Gives Altesino Cove residents direct, off-street access to the park — the easiest piece of the corridor to deliver.",
-        image: "/images/phase1-altesino.jpg",
+        image: "/images/proj1.jpeg",
       },
       {
         label: "Project 2",
         title: "Vine Creek Bridge",
         distance: "192 feet",
-        status: "Critical Safety Priority",
+        status: "Safety Priority",
+        // Color matches the route on the map (rgb 2, 136, 209)
+        color: "#0288d1",
         scope:
           "A pedestrian bridge across the Vine Creek tributary connecting the Vine Creek neighborhood to Blackhawk.",
         impact:
           "The keystone crossing — 192 feet that today separate hundreds of homes from any walkable connection west. Build it, and the Cele Island ends.",
-        image: "/images/phase2-bridge.jpg",
+        image: "/images/proj2.jpeg",
       },
       {
         label: "Project 3",
         title: "Finish the School Link",
         distance: "0.549 miles",
         status: "Safe Routes to School",
+        // Color matches the route on the map (rgb 255, 214, 0)
+        color: "#ffd600",
         scope:
           "Trail expansion across public and PfISD-owned land connecting Blackhawk to Rowe Lane Estates, passing Cele Middle School and Mott Elementary.",
         impact:
           "Creates a true Safe Route to School for 1,400+ students at Mott Elementary and Cele Middle, and links the corridor to the broader Pflugerville trail network.",
-        image: "/images/phase3-blackhawk.jpg",
+        image: "/images/proj3.jpeg",
       },
     ],
 
@@ -233,11 +239,11 @@ export const content = {
       },
     ],
 
-    blastTitle: "Spread the word",
+    blastTitle: "Tell your neighbors",
     blastIntro:
-      "Copy this and paste it into Nextdoor, your HOA group, or a group text. The city is ranking projects right now — every voice counts.",
+      "Copy this into Nextdoor, your HOA group, or a group text. The bond committee is ranking projects this summer — every voice the city sees counts toward making the November ballot.",
     blastText:
-      "Hey neighbors — help finish the Cele Trail. I'm asking the City of Pflugerville to fund three connected pedestrian projects in the 2026 Bond: a 192 ft creek bridge plus safe sidewalks connecting Vine Creek, Blackhawk, Enclave at Cele, and Rowe Lane Estates to our schools and parks. Please take 2 minutes on the bond survey and mention \"Cele Trail\" and \"Pedestrian Connectivity Gaps\". https://celetrail.com",
+      "Hey neighbors — help finish the Cele Trail. Pflugerville is picking its 2026 Bond projects right now, and we have a real shot at funding three connected pedestrian projects: a 192 ft creek bridge plus safe sidewalks linking Vine Creek, Enclave at Cele, and adjacent Blackhawk into the Trail Capital of Texas. Take 2 minutes on the bond survey and mention \"Cele Trail\" in the open-ended comments.\n\nFull plan + survey link → https://celetrail.com",
 
     petitionTitle: "Sign the neighborhood petition",
     petitionLede:
