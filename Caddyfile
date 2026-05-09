@@ -1,0 +1,21 @@
+{
+  auto_https off
+}
+
+:{$PORT} {
+  root * /app/dist
+  encode gzip zstd
+  try_files {path} /index.html
+  file_server
+
+  header {
+    X-Frame-Options "SAMEORIGIN"
+    X-Content-Type-Options "nosniff"
+    Referrer-Policy "strict-origin-when-cross-origin"
+    # Long cache for hashed assets, short for HTML
+    Cache-Control "public, max-age=3600"
+  }
+
+  @assets path /assets/*
+  header @assets Cache-Control "public, max-age=31536000, immutable"
+}
