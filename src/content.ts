@@ -243,7 +243,7 @@ export const content = {
     blastIntro:
       "Copy this into Nextdoor, your HOA group, or a group text. The bond committee is ranking projects this summer — every voice the city sees counts toward making the November ballot.",
     blastText:
-      "Hey neighbors — help finish the Cele Trail. Pflugerville is picking its 2026 Bond projects right now, and we have a real shot at funding three connected pedestrian projects: a 192 ft creek bridge plus safe sidewalks linking Vine Creek, Enclave at Cele, and adjacent Blackhawk into the Trail Capital of Texas. Take 2 minutes on the bond survey and mention \"Cele Trail\" in the open-ended comments.\n\nFull plan + survey link → https://celetrail.com",
+      "Hey neighbors — help finish the Cele Trail. Pflugerville is picking its 2026 Bond projects right now, and we have a real shot at funding three connected pedestrian projects: a 192 ft creek bridge plus safe sidewalks linking Vine Creek, Enclave at Cele, and adjacent Blackhawk into the Trail Capital of Texas. Take 2 minutes on the bond survey and mention \"Cele Trail\" in the open-ended comments. YOU NEED TO HURRY! The survey ends Monday May 11th.\n\nFull plan + survey link → https://celetrail.com",
 
     petitionTitle: "Sign the neighborhood petition",
     petitionLede:
