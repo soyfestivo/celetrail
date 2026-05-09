@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ArrowRight, MapPin, ChevronRight } from "lucide-react";
+import { ArrowRight, MapPin, ChevronRight, ChevronDown } from "lucide-react";
 import { content } from "../content";
 import Countdown from "./Countdown";
 import { getNextEvent } from "../lib/timeline";
@@ -17,7 +17,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative isolate overflow-hidden border-b border-stone-200"
+      className="relative isolate overflow-hidden border-b border-stone-200 min-h-dvh sm:min-h-0 flex flex-col justify-center sm:block"
     >
       {/* Background image */}
       <div
@@ -31,8 +31,7 @@ export default function Hero() {
 
       <div className="container-page py-14 sm:py-28 lg:py-32">
         <div className="max-w-3xl">
-          {/* Eyebrow tag — desktop only; mobile is too crowded */}
-          <div className="hidden sm:inline-flex mb-5 items-center gap-2 rounded-full border border-forest-200 bg-white/70 px-3 py-1 text-xs font-medium uppercase tracking-wider text-forest-700">
+          <div className="mb-4 sm:mb-5 inline-flex items-center gap-2 rounded-full border border-forest-200 bg-white/80 px-3 py-1 text-[11px] sm:text-xs font-medium uppercase tracking-wider text-forest-700">
             <MapPin className="h-3.5 w-3.5" />
             {hero.eyebrow}
           </div>
@@ -56,7 +55,7 @@ export default function Hero() {
                 <Countdown deadline={next.date} prefix={`Next: ${next.title}`} />
                 <ChevronRight className="h-4 w-4 mt-3 text-stone-400 transition-transform group-hover:translate-x-0.5" />
               </a>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap items-center gap-x-2 sm:gap-x-3 gap-y-2">
                 <a
                   href={hero.primaryCta.url}
                   target="_blank"
@@ -67,9 +66,10 @@ export default function Hero() {
                 </a>
                 <a
                   href={hero.secondaryCta.anchor}
-                  className="btn-secondary flex-1 sm:flex-none"
+                  className="inline-flex items-center gap-1 px-3 py-3 font-semibold text-forest-700 hover:text-forest-900"
                 >
                   {hero.secondaryCta.label}
+                  <ChevronDown className="h-4 w-4" />
                 </a>
               </div>
             </div>
