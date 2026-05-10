@@ -232,7 +232,7 @@ export const content = {
         cityBadge: false,
       },
       {
-        kicker: "Step 3 · Tuesday May 12 · 7pm",
+        kicker: "Step 3 · Monday May 18 · 6pm",
         title: "Speak at City Council",
         body: "1611 Pfennig Lane. Public comment is 3 minutes. Show up — even silent attendance signals priority to the council.",
         cta: "Add to calendar",
@@ -250,7 +250,7 @@ export const content = {
 
     petitionTitle: "Sign the neighborhood petition",
     petitionLede:
-      "Add your name and address. We'll print the list and bring it to the council meeting on May 12.",
+      "Add your name. We'll print the list and bring it to the council meeting on May 18th.",
     // INSTRUCTIONS:
     // 1. Create a Google Form: Name, Street Address, Email, optional comment
     // 2. Click Send → Embed (the < > icon)
